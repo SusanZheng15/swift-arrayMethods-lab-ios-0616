@@ -16,6 +16,13 @@
  */
 // write your code here
 
+var daysOfTheWeek: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+for day in daysOfTheWeek
+{
+    print (day)
+}
+
 
 
 
@@ -28,7 +35,14 @@
 // write your code here
 
 
+let numDaysOfTheWeek: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+var numForDays = 0
 
+for day in numDaysOfTheWeek
+{
+    print("\(numForDays + 1) day")
+    numForDays += 1
+}
 
 
 
@@ -38,7 +52,16 @@
  */
 // write your code here
 
+let emptyArray:[String] = []
 
+if(emptyArray.isEmpty)
+{
+    print("Its empty")
+}
+else
+{
+    print("Theres some stuff in the array")
+}
 
 
 
@@ -51,7 +74,16 @@
 // write your code here
 
 
+let reverseEmptyArray:[String] = []
 
+if(!reverseEmptyArray.isEmpty)
+{
+    print("Theres something in there")
+}
+else
+{
+    print("empty")
+}
 
 
 
@@ -63,7 +95,7 @@
  */
 // write your code here
 
-
+print(daysOfTheWeek.count)
 
 
 
@@ -74,6 +106,14 @@
  ### 6. Add the two days of the weekend to the 'daysOfTheWeek array and create an enumerated loop to print the values.
  */
 // write your code here
+
+daysOfTheWeek.insert("Saturday", atIndex: daysOfTheWeek.endIndex)
+daysOfTheWeek.insert("Sunday", atIndex: daysOfTheWeek.endIndex)
+
+for day in daysOfTheWeek
+{
+    print(day)
+}
 
 
 
@@ -86,7 +126,8 @@
  */
 // write your code here
 
-
+daysOfTheWeek.removeLast()
+daysOfTheWeek.insert("Sunday", atIndex: 0)
 
 
 
@@ -98,7 +139,10 @@
  */
 // write your code here
 
-
+for day in daysOfTheWeek
+{
+    day.lowercaseString
+}
 
 
 
@@ -110,6 +154,12 @@
  */
 // write your code here
 
+if(daysOfTheWeek.count > 5)
+{
+    daysOfTheWeek.removeLast()
+    daysOfTheWeek.removeFirst()
+    
+}
 
 
 
